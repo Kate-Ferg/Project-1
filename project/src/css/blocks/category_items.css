@@ -9,21 +9,21 @@
     margin-bottom: 80px;
 }
 
-.categories__flowers-blue {
+.categories__photo--blue {
     margin-bottom: 30px;
 }
 
-.categories__flowers li {
+.categories__item {
     list-style: none;
 }
 
-.categories__flowers li a {
+.categories__link {
     display: flex;
     margin-bottom: 20px;
     margin-left: -20px;
 }
 
-.categories__flowers-text {
+.categories__text {
     display: flex;
     flex-flow: row wrap;
     height: 80px;
@@ -32,7 +32,7 @@
     text-align: center;
 }
 
-.categories__flowers-text p{
+.categories__price {
     width: 81px;
 }
 
@@ -53,13 +53,13 @@
         justify-content: space-between;
     }
     
-    .categories__flowers img {
+    .categories__photo {
         margin-bottom: 0px;
         margin-top: 5px;
         margin-left: 25px;
     }
     
-    .categories__flowers li {
+    .categories__item {
         box-sizing: border-box;
         width: 330px;
         border: 1px solid #A5B5BA;
@@ -87,13 +87,13 @@
         margin-left: 40px;
     }
     
-    .categories__flowers img {
+    .categories__photo {
         margin-bottom: 0px;
         margin-top: 5px;
         margin-left: 25px;
     }
     
-    .categories__flowers li {
+    .categories__item {
         box-sizing: border-box;
         width: 330px;
         border: 1px solid #A5B5BA;

@@ -1,9 +1,9 @@
-footer p {
+.footer__info {
     color: #FFFFFF;
     padding-top: 20px;
     margin-left: 40px;
     font-family: raleway, sans-serif;
-    width: 240px;
+    width: 280px;
 }
 
 h1 {
@@ -48,7 +48,7 @@ p {
 
 @media (min-width: 760px) {
     
-    footer p {
+    .footer__info {
         width: 760px;
     }
     
@@ -65,7 +65,7 @@ p {
 
 @media (min-width: 1200px) {
     
-    footer p {
+    .footer__info {
         margin-left: 121px;
     }
     

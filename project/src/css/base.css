@@ -41,7 +41,7 @@ header {
     justify-content: center;
 }
 
-.header__logo img {
+.header__photo {
     height: 40px;
     margin-top: 5px;
     margin-left: 13px;
@@ -59,7 +59,7 @@ html {
     justify-content: center;
 }
 
-.social img {
+.social__photo {
     height: 20px;
     margin-left: 10px;
 }

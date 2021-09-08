@@ -8,11 +8,11 @@ white: #FFFFFF
  */
 
 /* basic styles*/
-@import url("scss/base.scss");
-@import url("scss/text.scss");
+@import 'base';
+@import 'text';
 
 /* generic block styles */
-@import url("scss/blocks/category_items.scss");
-@import url("scss/blocks/home_items.scss");
-@import url("scss/blocks/new-content_items.scss");
-@import url("scss/blocks/product_items.scss");
+@import 'category_items';
+@import 'home_items';
+@import 'new-content_items';
+@import 'product_items';

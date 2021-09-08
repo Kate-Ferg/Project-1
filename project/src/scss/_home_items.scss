@@ -1,4 +1,9 @@
 @use 'text';
+@mixin flex($flex: Content) {
+  display: flex;      
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
 
 .home__divider {
         visibility: hidden;
@@ -38,11 +43,9 @@
 
 @media (min-width: 760px) {
     
-    .home-categories {    
-        display: flex;
+    .home-categories { 
+        @include flex;
         width: 710px;
-        flex-flow: row wrap;
-        justify-content: space-between;
     }
     
     .home-categories__photo {
@@ -84,11 +87,9 @@
 
 @media (min-width: 1200px) {
     
-    .home-categories {    
-        display: flex;
+    .home-categories { 
+        @include flex;
         width: 920px;
-        flex-flow: row wrap;
-        justify-content: space-between;
         margin-left: 115px;
    }
     

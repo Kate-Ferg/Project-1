@@ -1,7 +1,10 @@
 @use 'text';
-@mixin flex($flex: Content) {
+@mixin flex {
   display: flex;      
   flex-flow: row wrap;
+}
+@mixin space {
+  @include flex;
   justify-content: space-between;
 }
 
@@ -44,7 +47,7 @@
 @media (min-width: 760px) {
     
     .home-categories { 
-        @include flex;
+        @include space;
         width: 710px;
     }
     
@@ -88,7 +91,7 @@
 @media (min-width: 1200px) {
     
     .home-categories { 
-        @include flex;
+        @include space;
         width: 920px;
         margin-left: 115px;
    }

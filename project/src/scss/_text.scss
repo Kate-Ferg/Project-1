@@ -1,8 +1,10 @@
+$font-stack: raleway, sans-serif;
+
 .footer__info {
     color: #FFFFFF;
     padding-top: 20px;
     margin-left: 40px;
-    font-family: raleway, sans-serif;
+    font-family: $font-stack;
     width: 280px;
 }
 
@@ -16,7 +18,7 @@ h1 {
 }
 
 h2 {
-    font-family: raleway, sans-serif;
+    font-family: $font-stack;
     font-weight: 400;
     color: #89BE05;
     font-size: 2.6rem;
@@ -27,7 +29,7 @@ h2 {
 }
 
 h3 {
-    font-family: raleway, sans-serif;
+    font-family: $font-stack;
     color: #A5B5BA;
     font-weight: 400;
     font-size: 1.8rem;

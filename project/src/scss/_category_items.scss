@@ -26,8 +26,7 @@
 }
 
 .categories__text {
-    display: flex;
-    flex-flow: row wrap;
+    @include flex;
     height: 80px;
     margin-top: 90px;
     margin-left: 35px;
@@ -49,7 +48,7 @@
     }
     
         .categories__flowers {
-        @include flex;
+        @include space;
         width: 680px;
     }
     

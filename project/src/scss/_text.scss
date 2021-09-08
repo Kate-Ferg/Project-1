@@ -1,8 +1,9 @@
 $font-stack: raleway, sans-serif;
 $primary-color: #000000;
+$secondary-color: #FFFFFF;
 
 .footer__info {
-    color: #FFFFFF;
+    color: $secondary-color;
     padding-top: 20px;
     margin-left: 40px;
     font-family: $font-stack;

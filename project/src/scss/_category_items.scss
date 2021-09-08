@@ -1,4 +1,12 @@
 @use 'home_items';
+@use 'text';
+@mixin item-reset {
+    box-sizing: border-box;
+    width: 330px;
+    border: 1px solid $tertiary-color;
+    margin-bottom: 20px;
+    margin-left: 0px;
+}
 
 .banner {
     margin-bottom: 80px;
@@ -59,11 +67,7 @@
     }
     
     .categories__item {
-        box-sizing: border-box;
-        width: 330px;
-        border: 1px solid $tertiary-color;
-        margin-bottom: 20px;
-        margin-left: 0px;
+        @include item-reset;
     }
     
     .categories__intro {
@@ -93,11 +97,7 @@
     }
     
     .categories__item {
-        box-sizing: border-box;
-        width: 330px;
-        border: 1px solid $tertiary-color;
-        margin-bottom: 20px;
-        margin-left: 0px;
+        @include item-reset;
     }
     
     .categories__intro {

@@ -1,3 +1,5 @@
+@use 'home_items';
+
 .banner {
     margin-bottom: 80px;
 }
@@ -47,10 +49,8 @@
     }
     
         .categories__flowers {
-        display: flex;
+        @include flex;
         width: 680px;
-        flex-flow: row wrap;
-        justify-content: space-between;
     }
     
     .categories__photo {

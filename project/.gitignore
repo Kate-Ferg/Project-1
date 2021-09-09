@@ -1,4 +1,4 @@
 node_modules
-*.scss
-*.scss.map
+*.css
+*.css.map
 package-lock.json

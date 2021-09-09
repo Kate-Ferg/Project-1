@@ -7,11 +7,15 @@
   @include flex;
   justify-content: space-between;
 }
-%message-shared {
+%margins-shared {
   margin-left: -40px;
   margin-bottom: 20px;
   list-style: none;
 }
+%width-shared {
+  width: 364px;
+}
+
 
 .home__divider {
         visibility: hidden;
@@ -30,7 +34,7 @@
 }
 
 .home-categories__item--new {
-    @extend %message-shared;
+    @extend %margins-shared;
     margin-top: px;
     padding-bottom: 60px;
 }
@@ -72,6 +76,7 @@
     }
     
     .home-categories__photo--new {
+        @extend %width-shared;
         height: 214px;
     }
     

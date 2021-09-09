@@ -15,6 +15,9 @@
 %width-shared {
   width: 364px;
 }
+%photo-shared {
+  width: 462px;
+}
 
 
 .home__divider {
@@ -122,6 +125,7 @@
     }
     
     .home-categories__photo--new {
+        @extend %photo-shared;
         height: 273px;
     }
     

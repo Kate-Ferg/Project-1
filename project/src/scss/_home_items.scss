@@ -1,3 +1,25 @@
+@use 'text';
+@mixin flex {
+  display: flex;      
+  flex-flow: row wrap;
+}
+@mixin space {
+  @include flex;
+  justify-content: space-between;
+}
+%margins-shared {
+  margin-left: -40px;
+  margin-bottom: 20px;
+  list-style: none;
+}
+%width-shared {
+  width: 364px;
+}
+%photo-shared {
+  width: 462px;
+}
+
+
 .home__divider {
         visibility: hidden;
     }
@@ -8,20 +30,21 @@
     margin-bottom: 60px;
 }
 
-.home-categories li {
+.home-categories__item {
     margin-left: -40px;
     margin-bottom: 20px;
     list-style: none;
 }
 
-.home-categories__new {
+.home-categories__item--new {
+    @extend %margins-shared;
     margin-top: px;
     padding-bottom: 60px;
 }
 
-.home-categories__new h3 {
+.home-categories__name {
     margin-left: 10px;
-    color: #000000;
+    color: $primary-color;
     position: relative;
     margin-top: -30px;
     font-weight: 600;
@@ -36,28 +59,27 @@
 
 @media (min-width: 760px) {
     
-    .home-categories {    
-        display: flex;
+    .home-categories { 
+        @include space;
         width: 710px;
-        flex-flow: row wrap;
-        justify-content: space-between;
     }
     
-    .home-categories img {
+    .home-categories__photo {
         width: 364px;
     }
     
-    .home-categories li {  
+    .home-categories__item {  
         box-sizing: border-box;
         width: 364px;
    }
     
-    .home-categories__new h3 {
+    .home-categories__name {
         margin-bottom: 30px;  
         margin-top: -30px;
     }
     
-    .home-categories__new img {
+    .home-categories__photo--new {
+        @extend %width-shared;
         height: 214px;
     }
     
@@ -82,29 +104,28 @@
 
 @media (min-width: 1200px) {
     
-    .home-categories {    
-        display: flex;
+    .home-categories { 
+        @include space;
         width: 920px;
-        flex-flow: row wrap;
-        justify-content: space-between;
         margin-left: 115px;
    }
     
-    .home-categories img {
+    .home-categories__photo {
         width: 462px;    
     }
     
-    .home-categories li {  
+    .home-categories__item {  
         box-sizing: border-box;
         width: 462px;
    }
     
-    .home-categories__new h3 {
+    .home-categories__name {
         margin-bottom: 30px;  
         margin-top: -30px;
     }
     
-    .home-categories__new img {
+    .home-categories__photo--new {
+        @extend %photo-shared;
         height: 273px;
     }
     

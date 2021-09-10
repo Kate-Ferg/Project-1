@@ -1,3 +1,13 @@
+@use 'home_items';
+@use 'text';
+@mixin item-reset {
+    box-sizing: border-box;
+    width: 330px;
+    border: 1px solid $tertiary-color;
+    margin-bottom: 20px;
+    margin-left: 0px;
+}
+
 .banner {
     margin-bottom: 80px;
 }
@@ -9,30 +19,29 @@
     margin-bottom: 80px;
 }
 
-.categories__flowers-blue {
+.categories__photo--blue {
     margin-bottom: 30px;
 }
 
-.categories__flowers li {
+.categories__item {
     list-style: none;
 }
 
-.categories__flowers li a {
+.categories__link {
     display: flex;
     margin-bottom: 20px;
     margin-left: -20px;
 }
 
-.categories__flowers-text {
-    display: flex;
-    flex-flow: row wrap;
+.categories__text {
+    @include flex;
     height: 80px;
     margin-top: 90px;
     margin-left: 35px;
     text-align: center;
 }
 
-.categories__flowers-text p{
+.categories__price {
     width: 81px;
 }
 
@@ -46,25 +55,19 @@
         margin-left: 102px;
     }
     
-        .categories__flowers {
-        display: flex;
+    .categories__flowers {
+        @include space;
         width: 680px;
-        flex-flow: row wrap;
-        justify-content: space-between;
     }
     
-    .categories__flowers img {
+    .categories__photo {
         margin-bottom: 0px;
         margin-top: 5px;
         margin-left: 25px;
     }
     
-    .categories__flowers li {
-        box-sizing: border-box;
-        width: 330px;
-        border: 1px solid #A5B5BA;
-        margin-bottom: 20px;
-        margin-left: 0px;
+    .categories__item {
+        @include item-reset;
     }
     
     .categories__intro {
@@ -87,18 +90,14 @@
         margin-left: 40px;
     }
     
-    .categories__flowers img {
+    .categories__photo {
         margin-bottom: 0px;
         margin-top: 5px;
         margin-left: 25px;
     }
     
-    .categories__flowers li {
-        box-sizing: border-box;
-        width: 330px;
-        border: 1px solid #A5B5BA;
-        margin-bottom: 20px;
-        margin-left: 0px;
+    .categories__item {
+        @include item-reset;
     }
     
     .categories__intro {

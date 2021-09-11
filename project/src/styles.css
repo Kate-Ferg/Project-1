@@ -2,8 +2,7 @@
 
 .banner {
     margin-bottom: 80px;
-    width: 464px;
-    height: 80px;
+    max-width: 100%;
 }
 
 .categories__intro {
@@ -45,8 +44,7 @@
 @media (min-width: 760px) {
     
     .banner {
-        width: 564px;
-        height: 115px;
+        
         margin-left: 102px;
     }
     
@@ -80,8 +78,7 @@
 @media (min-width: 1200px) {
     
     .banner {
-        width: 700px;
-        height: 150px;
+        
         margin-left: 250px;
     }
     

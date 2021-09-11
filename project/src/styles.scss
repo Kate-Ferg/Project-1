@@ -1,1 +1,19 @@
+@import url("https://use.typekit.net/kpp5whf.css");
+
+/*
+pink: #FE0078
+green: #89BE05
+gray: #A5B5BA
+white: #FFFFFF
+ */
+
+/* basic styles*/
+@import 'base';
+@import 'text';
+
+/* generic block styles */
+@import 'category_items';
+@import 'home_items';
+@import 'new-content_items';
+@import 'product_items';
 
